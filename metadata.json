@@ -1,0 +1,6 @@
+{
+  "name": "Al Aqsa Restaurant",
+  "description": "Premium Arabic Restaurant & Cafeteria in International City Phase 2, Dubai. Explore our authentic shawarma, grilled meats, fatteh, manakeesh, and more, with easy-phone ordering and custom sharing features.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
