@@ -122,8 +122,8 @@ export function Hero({ ready }: { ready: boolean }) {
       {/* Meta row */}
       <div className="relative z-10 mx-auto flex max-w-[1600px] items-start justify-between px-5 pt-24 font-mono text-[10px] uppercase tracking-[0.28em] md:px-10 md:pt-32">
         <motion.div variants={fadeIn(0.9)} initial="hidden" animate={show} className="space-y-1">
-          <div>Grade 12 · English</div>
-          <div className="text-ink/50">Portfolio Edition</div>
+          <div>Hani Abbas</div>
+          <div className="text-ink/50">Grade 12 · English Portfolio</div>
         </motion.div>
         <motion.div variants={fadeIn(1)} initial="hidden" animate={show} className="hidden space-y-1 text-right md:block">
           <div>Fall Term 2026</div>

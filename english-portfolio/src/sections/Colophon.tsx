@@ -75,7 +75,7 @@ export function Colophon() {
 
       <div className="relative z-10 border-t border-cream/10">
         <div className="mx-auto flex max-w-[1600px] flex-wrap items-center justify-between gap-4 px-5 py-6 font-mono text-[10px] uppercase tracking-[0.22em] text-cream/50 md:px-10">
-          <span>English — First Semester · Grade 12 · 2026</span>
+          <span>Hani Abbas English Portfolio · Grade 12 · 2026</span>
           <button onClick={() => scrollTo(0)} className="group flex items-center gap-3 text-cream/80 hover:text-cream" data-cursor="Top">
             Back to top
             <span className="flex h-9 w-9 items-center justify-center border border-cream/30 transition-colors group-hover:bg-cream group-hover:text-ink">

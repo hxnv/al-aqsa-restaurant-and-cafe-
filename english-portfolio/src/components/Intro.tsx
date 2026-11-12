@@ -33,7 +33,7 @@ export function Intro({ onDone }: { onDone: () => void }) {
           transition={{ duration: 1, ease: EASE }}
         >
           <div className="relative z-10 flex justify-between font-mono text-[10px] uppercase tracking-[0.3em] text-cream/60">
-            <span>Grade 12 · Portfolio</span>
+            <span>Hani Abbas · English Portfolio</span>
             <span>Vol. I</span>
           </div>
           <div className="relative z-10 flex items-end justify-center overflow-hidden">

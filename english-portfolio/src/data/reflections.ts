@@ -60,7 +60,7 @@ export const reflections: Entry[] = [
     sections: [
       {
         heading: 'My boast (excerpt)',
-        blocks: [q('I am [Name], child of long-distance runners, finisher of the four-hundred-page novel, slayer of the Sunday-night essay. I vow before this hall to read Macbeth before the term ends, and not the summary.', 'Class performance')],
+        blocks: [q('I am Hani Abbas, child of long-distance runners, finisher of the four-hundred-page novel, slayer of the Sunday-night essay. I vow before this hall to read Macbeth before the term ends, and not the summary.', 'Class performance')],
       },
       { heading: 'What I learned', blocks: [ul('Formal structure makes even humour feel ceremonial.', 'Boasting was a promise, binding the speaker to action.')] },
     ],

@@ -1,4 +1,4 @@
-# English — First Semester
+# Hani Abbas English Portfolio
 
 An editorial, interactive Grade 12 English portfolio (design preview with placeholder content).
 
