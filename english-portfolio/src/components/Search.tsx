@@ -49,7 +49,7 @@ function SearchPanel({ onClose }: { onClose: () => void }) {
   const shown = q.trim() ? results : browse.map((entry) => ({ entry, score: 0, snippet: entry.subtitle }));
 
   useEffect(() => {
-    setTimeout(() => input.current?.focus(), 80);
+    input.current?.focus();
   }, []);
   useEffect(() => setSel(0), [q, filter]);
 
@@ -90,6 +90,7 @@ function SearchPanel({ onClose }: { onClose: () => void }) {
           <SearchIcon size={22} strokeWidth={1.4} className="shrink-0 text-coral" />
           <input
             ref={input}
+            autoFocus
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder="Search notes, topics, quotations…"

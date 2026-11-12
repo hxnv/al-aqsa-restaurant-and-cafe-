@@ -7,6 +7,8 @@ export default defineConfig({
   server: { port: 5173, host: true },
   build: {
     chunkSizeWarningLimit: 700,
+    assetsInlineLimit: 0,
+    sourcemap: false,
     rollupOptions: {
       output: {
         manualChunks: { react: ['react', 'react-dom'], motion: ['framer-motion', 'lenis'] },
