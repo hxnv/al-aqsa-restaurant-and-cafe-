@@ -1,0 +1,222 @@
+import { callout, concepts, ol, p, q, table, ul, type Entry } from './types';
+
+export const notes: Entry[] = [
+  {
+    id: 'note-01',
+    kind: 'note',
+    title: 'Why We Still Read Old Stories',
+    kicker: 'Lesson 01',
+    subtitle: 'Course introduction and the oral tradition.',
+    date: '2026-09-02',
+    tags: ['introduction', 'oral tradition', 'storytelling', 'canon'],
+    theme: 'cream',
+    art: 'book',
+    intro: 'Our first lesson asked a simple question: why does a 1,000-year-old poem still matter? We discussed how stories preserve values, warn against dangers and give communities a shared memory.',
+    sections: [
+      {
+        heading: 'Discussion',
+        blocks: [
+          p('Before writing, stories lived in voices. The **oral tradition** relied on formulas, repetition and memorable sounds so poets could perform long works from memory.'),
+          ul('Repetition helps memory and creates ritual.', 'Stock phrases (epithets) fill metrical gaps.', 'Each performance was slightly different, so the “text” was alive.'),
+        ],
+      },
+      { heading: 'Homework', blocks: [p('Write a 200-word reflection on a story that was told to you before you could read it.')] },
+    ],
+    takeaways: ['Literature began as performance.', 'Repetition was a technology of memory.'],
+  },
+  {
+    id: 'note-02',
+    kind: 'note',
+    title: 'The Anglo-Saxon World',
+    kicker: 'Lesson 02',
+    subtitle: 'History, culture and the warrior code.',
+    date: '2026-09-09',
+    tags: ['Anglo-Saxon', 'history', 'comitatus', 'context'],
+    theme: 'beowulf',
+    art: 'mead-hall',
+    intro: 'A timeline lesson covering the arrival of the Angles, Saxons and Jutes in Britain, the conversion to Christianity, and the society that produced Beowulf.',
+    sections: [
+      {
+        heading: 'Timeline',
+        blocks: [
+          table(['Date', 'Event'], ['c. 450', 'Germanic tribes settle in Britain'], ['597', 'Augustine’s mission begins the Christian conversion'], ['c. 700–1000', 'Beowulf composed'], ['c. 1000', 'The surviving manuscript is copied'], ['1066', 'Norman Conquest ends the Anglo-Saxon period']),
+        ],
+      },
+      {
+        heading: 'Key ideas',
+        blocks: [concepts(['Comitatus', 'Loyalty between lord and warrior.'], ['Fame (lof)', 'The only immortality a pagan warrior could count on.'])],
+      },
+    ],
+    takeaways: ['Beowulf sits at a crossroads of pagan and Christian culture.', 'Reputation was the highest value.'],
+  },
+  {
+    id: 'note-03',
+    kind: 'note',
+    title: 'Grendel at the Door',
+    kicker: 'Lesson 03',
+    subtitle: 'Reading lines 1–836: the first battle.',
+    date: '2026-09-16',
+    tags: ['Beowulf', 'Grendel', 'Heorot', 'close reading'],
+    theme: 'beowulf',
+    art: 'eye',
+    intro: 'We read the opening and the first battle aloud in groups, focusing on how the poet builds dread around Grendel without fully describing him.',
+    sections: [
+      {
+        heading: 'Close reading',
+        blocks: [
+          p('Grendel is never clearly pictured. He is a “shadow-stalker”, a “hall-watcher”. The **absence of detail** makes him more frightening; the reader’s imagination fills the gap.'),
+          q('Then a powerful demon, a prowler through the dark, nursed a hard grievance.', 'll. 86–87, trans. Seamus Heaney'),
+        ],
+      },
+      { heading: 'Group question', blocks: [p('Why might Grendel be tormented by the sound of music and celebration from the hall?')] },
+    ],
+    takeaways: ['Horror works through suggestion.', 'Grendel represents exclusion from community.'],
+  },
+  {
+    id: 'note-04',
+    kind: 'note',
+    title: 'Kennings Workshop',
+    kicker: 'Lesson 04',
+    subtitle: 'Inventing compound metaphors for modern life.',
+    date: '2026-09-23',
+    tags: ['kenning', 'creative writing', 'metaphor', 'workshop'],
+    theme: 'ember',
+    art: 'quill',
+    intro: 'A creative session: after studying kennings in the poem, we invented our own for everyday modern objects, then explained the image behind each one.',
+    sections: [
+      {
+        heading: 'Class kennings',
+        blocks: [table(['Kenning', 'Object'], ['thumb-scroll', 'a smartphone'], ['sleep-thief', 'an alarm clock'], ['road-whale', 'a city bus'], ['word-hoard', 'a library'])],
+      },
+      { heading: 'Reflection', blocks: [p('A good kenning reveals a hidden quality of its object. “Sleep-thief” makes the alarm clock a villain.')] },
+    ],
+    takeaways: ['Kennings are riddles that reveal perspective.'],
+  },
+  {
+    id: 'note-05',
+    kind: 'note',
+    title: 'The Mother Beneath the Lake',
+    kicker: 'Lesson 05',
+    subtitle: 'Revenge, gender and the second battle.',
+    date: '2026-09-30',
+    tags: ['Grendel’s mother', 'revenge', 'gender', 'Beowulf'],
+    theme: 'plum',
+    art: 'wave',
+    intro: 'A debate lesson: is Grendel’s mother a monster, or a grieving parent following the same revenge code as the human warriors?',
+    sections: [
+      {
+        heading: 'Debate notes',
+        blocks: [
+          table(['Monster', 'Mirror'], ['Lives outside human society in a hellish lake', 'Acts exactly as the code of vengeance demands'], ['Described as a “monstrous hell-bride”', 'Takes only one life, Aeschere, in exchange for her son']),
+          callout('Insight', 'The episode exposes the endless cycle of blood-feud that the warrior code depends on.'),
+        ],
+      },
+    ],
+    takeaways: ['Grendel’s mother complicates the line between hero and monster.'],
+  },
+  {
+    id: 'note-06',
+    kind: 'note',
+    title: 'Thesis Bootcamp',
+    kicker: 'Lesson 06',
+    subtitle: 'From observation to argument.',
+    date: '2026-10-07',
+    tags: ['thesis', 'essay', 'argument', 'writing'],
+    theme: 'navy',
+    art: 'compass',
+    intro: 'A practical writing lesson. We took observations about Beowulf and upgraded them into arguable thesis statements through three rounds of peer revision.',
+    sections: [
+      {
+        heading: 'The ladder',
+        blocks: [
+          ol('Observation: Beowulf fights three monsters.', 'Interpretation: The fights get harder as he ages.', 'Argument: The poem uses three battles to show that heroism, however great, cannot overcome mortality.'),
+        ],
+      },
+    ],
+    takeaways: ['Climb from what to how to why.'],
+  },
+  {
+    id: 'note-07',
+    kind: 'note',
+    title: 'The Dragon and the King',
+    kicker: 'Lesson 07',
+    subtitle: 'Old age, kingship and the poem’s elegiac ending.',
+    date: '2026-10-14',
+    tags: ['dragon', 'Wiglaf', 'kingship', 'elegy', 'ending'],
+    theme: 'beowulf',
+    art: 'dragon',
+    intro: 'We finished the poem and discussed whether Beowulf’s final fight is heroic or reckless. A king who dies leaves his people vulnerable.',
+    sections: [
+      {
+        heading: 'Two readings',
+        blocks: [
+          concepts(['Heroic', 'He protects his people to the end and wins the dragon’s treasure for them.'], ['Tragic', 'His desire for one last glory leaves the Geats leaderless before their enemies.']),
+          p('The poem ends with a **funeral pyre** and a Geatish woman’s lament, a prophecy of the suffering to come.'),
+        ],
+      },
+    ],
+    takeaways: ['The ending is elegiac: it mourns the hero and the world he held together.'],
+  },
+  {
+    id: 'note-08',
+    kind: 'note',
+    title: 'Enter Macbeth',
+    kicker: 'Lesson 08',
+    subtitle: 'Tragedy, ambition and the supernatural.',
+    date: '2026-10-28',
+    tags: ['Macbeth', 'Shakespeare', 'tragedy', 'ambition', 'witches'],
+    theme: 'violet',
+    art: 'mask',
+    intro: 'Moving from epic to tragedy: an introduction to Shakespeare’s Macbeth and the conventions of tragic drama.',
+    sections: [
+      {
+        heading: 'Tragic conventions',
+        blocks: [
+          concepts(['Tragic hero', 'A person of high status whose flaw leads to downfall.'], ['Hamartia', 'The fatal flaw or error.'], ['Catharsis', 'The audience’s release of pity and fear.'], ['Anagnorisis', 'The moment of tragic recognition.']),
+        ],
+      },
+    ],
+    takeaways: ['Macbeth inverts Beowulf: a warrior whose ambition destroys the order he should protect.'],
+  },
+  {
+    id: 'note-09',
+    kind: 'note',
+    title: 'Rhetoric in the Real World',
+    kicker: 'Lesson 09',
+    subtitle: 'Analysing speeches and advertisements.',
+    date: '2026-11-04',
+    tags: ['rhetoric', 'speeches', 'media', 'persuasion'],
+    theme: 'electric',
+    art: 'wave',
+    intro: 'We brought in speeches and advertisements and mapped their use of ethos, pathos and logos on the board.',
+    sections: [
+      {
+        heading: 'Findings',
+        blocks: [ul('Advertisements lean heavily on pathos and implied ethos (celebrity endorsement).', 'Political speeches use tricolon and anaphora for rhythm.', 'Logos is often present but simplified.')],
+      },
+    ],
+    takeaways: ['Rhetorical analysis applies far beyond literature.'],
+  },
+  {
+    id: 'note-10',
+    kind: 'note',
+    title: 'Comparing Across Centuries',
+    kicker: 'Lesson 10',
+    subtitle: 'Building a comparative essay.',
+    date: '2026-11-11',
+    tags: ['comparison', 'essay', 'Beowulf', 'Macbeth', 'Gawain'],
+    theme: 'moss',
+    art: 'venn',
+    intro: 'Strategies for comparative writing: choosing a focus, structuring by point instead of by text, and using transitions that show relationships.',
+    sections: [
+      {
+        heading: 'Structures',
+        blocks: [
+          table(['Block method', 'Point-by-point method'], ['All of Text A, then all of Text B', 'Alternate texts within each paragraph'], ['Easier to plan', 'Stronger analysis and more sophisticated']),
+          callout('Transitions', 'Similarly · In contrast · Whereas · Likewise · Conversely'),
+        ],
+      },
+    ],
+    takeaways: ['Point-by-point comparison produces deeper analysis.'],
+  },
+];

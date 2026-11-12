@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces Variable", "Times New Roman", serif;
+  --font-sans: "Inter Tight Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+  --font-medieval: "Cinzel Variable", "Trajan Pro", serif;
+  --font-accent: "Instrument Serif", "Fraunces Variable", serif;
+
+  --color-midnight: #070b1f;
+  --color-ink: #0b1230;
+  --color-navy: #142057;
+  --color-cream: #f4ecdc;
+  --color-paper: #faf6ee;
+  --color-bone: #e6dcc6;
+  --color-electric: #3d5afe;
+  --color-violet: #7b5cff;
+  --color-lilac: #c3b5ff;
+  --color-coral: #ff6b4a;
+  --color-ember: #e0875c;
+  --color-gold: #c9a24a;
+  --color-goldlight: #ecd18c;
+  --color-moss: #23493f;
+  --color-plum: #3b1638;
+  --color-blush: #f6c9b8;
+
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-stopped { overflow: hidden; }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    overflow-x: clip;
+  }
+  ::selection { background: var(--color-coral); color: var(--color-paper); }
+  :focus-visible { outline: 2px solid var(--color-electric); outline-offset: 3px; }
+  button { cursor: pointer; }
+  @media (hover: hover) and (pointer: fine) {
+    body.has-cursor, body.has-cursor a, body.has-cursor button { cursor: none; }
+  }
+}
+
+@layer utilities {
+  .font-display-soft { font-variation-settings: "SOFT" 100, "WONK" 1; }
+  .font-display-sharp { font-variation-settings: "SOFT" 0, "WONK" 0; }
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.18;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    z-index: 1;
+  }
+  .grain-light::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.12;
+    mix-blend-mode: screen;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    z-index: 1;
+  }
+  .text-outline {
+    -webkit-text-stroke: 1px currentColor;
+    color: transparent;
+  }
+  .rule-lines {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 31px,
+      color-mix(in oklab, var(--color-electric) 22%, transparent) 31px,
+      color-mix(in oklab, var(--color-electric) 22%, transparent) 32px
+    );
+  }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { scrollbar-width: none; }
+  .thin-scrollbar { scrollbar-width: thin; scrollbar-color: color-mix(in oklab, currentColor 30%, transparent) transparent; }
+}
+
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.animate-marquee { animation: marquee 38s linear infinite; }
+.animate-marquee-slow { animation: marquee 70s linear infinite; }
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+.animate-spin-slow { animation: spin-slow 28s linear infinite; }
+@keyframes flicker {
+  0%, 100% { opacity: 0.85; } 40% { opacity: 1; } 55% { opacity: 0.7; } 70% { opacity: 0.95; }
+}
+.animate-flicker { animation: flicker 3.2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee, .animate-marquee-slow, .animate-spin-slow, .animate-flicker { animation: none; }
+}
